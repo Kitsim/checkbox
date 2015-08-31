@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<!--[if IE 8]> <html lang="it" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="it" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+
+<head>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+ 
+   <script>
+$(document).ready(function () {
+     $('#txt').val($(this).is(':checked'));
+	$('#txt').val('€ 45,00 /mese');
+	
+	$('input[type=checkbox]').click(function(){
+       if ($('input[type=checkbox]').is(':checked')) {
+        $('#txt').val('€ 53,54 /mese');
+    }
+    else{
+        $('#txt').val('€ 45,00 /mese');
+    }
+    });
+   
+});
+</script> 
+
+</head>
+
+
+
+
+<body>
+
+
+
+<style type="text/css">
+input {border:none;}
+</style>
+  
+	<strong><input class="text-center stile_2" id="txt" type="text" value="txt"> </strong> </h1>
+	<h5 class="pull-center color-grey">iva inclusa</h5>
+	 
+	 <h5><input type="checkbox" id="txt" name="txt" value="Opzione Business"><label>&nbsp; Opzione Business</label></h5>
+<table>
+<tr>
+    <td></td>
+   
+</tr>
+ 
+</table>
+</body>
+
+</html>
+  
